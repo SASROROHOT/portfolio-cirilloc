@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Christian Cirillo</title>
+
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO</h1>
+        <div class="subtitle">christian cirillo</div>
+    </header>
+    
+    <nav>
+        <div class="menu">
+            <a href="#home" class="nav-link active" data-page="home">Home</a>
+            <a href="#terza" class="nav-link" data-page="terza">Terza</a>
+            <a href="#quarta" class="nav-link" data-page="quarta">Quarta</a>
+            <a href="#quinta" class="nav-link" data-page="quinta">Quinta</a>
+        </div>
+    </nav>
+    
+    <div id="home" class="page active">
+        <section>
+            <h2>CHI SONO?</h2>
+            <p>[Paragrafo 1 da riempire - Introduzione personale]</p>
+            <p>[Paragrafo 2 da riempire - Competenze ed esperienze]</p>
+            <p>[Paragrafo 3 da riempire - Obiettivi e passioni]</p>
+        </section>
+    </div>
+    
+    <div id="terza" class="page">
+        <section>
+            <div class="project">
+            <div class="project-title">UST</div>
+            <div class="project-content">
+                <div class="project-text">
+                    <p>[Paragrafo 1 sul progetto UST da riempire]</p>
+                    <p>[Paragrafo 2 sul progetto UST da riempire]</p>
+                    <p>[Paragrafo 3 sul progetto UST da riempire]</p>
+                    <p>[Paragrafo 4 sul progetto UST da riempire - puoi aggiungere più paragrafi]</p>
+                    <p>[Paragrafo 5 sul progetto UST da riempire - puoi aggiungere più paragrafi]</p>
+                </div>
+            </div>
+        </div>
+            
+            <div class="project">
+                <div class="project-title">MONTA E SMONTA</div>
+                <div class="project-content">
+                    <div class="gallery-container">
+                        <div class="gallery" id="gallery-monta">
+                            <!-- Inserisci qui le tue immagini MONTA E SMONTA -->
+                            <!-- Esempio: <img src="monta-1.jpg" alt="Monta e Smonta Image 1" class="gallery-img"> -->
+                            <div class="gallery-img"><img src="img/img1.jpeg" width="400" height="350"></div>
+                            <div class="gallery-img"><img src="img/img3.jpeg" width="400" height="350"></div>
+                            <div class="gallery-img"><img src="img/img4.jpeg" width="400" height="350"></div>
+                            <div class="gallery-img"><img src="img/img9.jpeg" width="400" height="350"></div>
+                            <div class="gallery-img"><img src="img/img13.jpeg" width="400" height="350"></div>
+                        </div>
+                        <button class="gallery-control gallery-prev" onclick="moveGallery('monta', -1)">&#10094;</button>
+                        <button class="gallery-control gallery-next" onclick="moveGallery('monta', 1)">&#10095;</button>
+                    </div>
+                    <div class="project-text">
+                        <p>[Paragrafo 1 sul progetto MONTA E SMONTA da riempire]</p>
+                        <p>[Paragrafo 2 sul progetto MONTA E SMONTA da riempire]</p>
+                        <p>[Paragrafo 3 sul progetto MONTA E SMONTA da riempire]</p>
+                    </div>
+                </div>
+                <div class="gallery-indicators" id="indicators-monta">
+                    <span class="indicator active" onclick="goToSlide('monta', 0)"></span>
+                    <span class="indicator" onclick="goToSlide('monta', 1)"></span>
+                    <span class="indicator" onclick="goToSlide('monta', 2)"></span>
+                    <span class="indicator" onclick="goToSlide('monta', 3)"></span>
+                    <span class="indicator" onclick="goToSlide('monta', 4)"></span>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-title">NONNI SMART</div>
+                <div class="project-content">
+                    <div class="gallery-container">
+                        <div class="gallery" id="gallery-nonni">
+                            <!-- Inserisci qui le tue immagini NONNI SMART -->
+                            <!-- Esempio: <img src="nonni-1.jpg" alt="Nonni Smart Image 1" class="gallery-img"> -->
+                            <div class="gallery-img">Immagine NONNI SMART 1</div>
+                            <div class="gallery-img">Immagine NONNI SMART 2</div>
+                            <div class="gallery-img">Immagine NONNI SMART 3</div>
+                            <div class="gallery-img">Immagine NONNI SMART 4</div>
+                            <div class="gallery-img">Immagine NONNI SMART 5</div>
+                        </div>
+                        <button class="gallery-control gallery-prev" onclick="moveGallery('nonni', -1)">&#10094;</button>
+                        <button class="gallery-control gallery-next" onclick="moveGallery('nonni', 1)">&#10095;</button>
+                    </div>
+                    <div class="project-text">
+                        <p>[Paragrafo 1 sul progetto NONNI SMART da riempire]</p>
+                        <p>[Paragrafo 2 sul progetto NONNI SMART da riempire]</p>
+                        <p>[Paragrafo 3 sul progetto NONNI SMART da riempire]</p>
+                    </div>
+                </div>
+                <div class="gallery-indicators" id="indicators-nonni">
+                    <span class="indicator active" onclick="goToSlide('nonni', 0)"></span>
+                    <span class="indicator" onclick="goToSlide('nonni', 1)"></span>
+                    <span class="indicator" onclick="goToSlide('nonni', 2)"></span>
+                    <span class="indicator" onclick="goToSlide('nonni', 3)"></span>
+                    <span class="indicator" onclick="goToSlide('nonni', 4)"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="quarta" class="page">
+        <section>
+            <div class="coming-soon">COMING SOON</div>
+        </section>
+    </div>
+    
+    <div id="quinta" class="page">
+        <section>
+            <div class="coming-soon">COMING SOON</div>
+        </section>
+    </div>
+
+    <script>
+        // Funzione per gestire la navigazione tra le pagine
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Rimuovi active da tutti i link e aggiungi a quello cliccato
+                document.querySelectorAll('.nav-link').forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Nascondi tutte le pagine e mostra quella selezionata
+                document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+                const targetPage = this.getAttribute('data-page');
+                document.getElementById(targetPage).classList.add('active');
+            });
+        });
+        
+        // Oggetti per tenere traccia della posizione corrente della galleria
+        const currentSlides = {
+            'ust': 0,
+            'monta': 0,
+            'nonni': 0
+        };
+        
+        // Funzione per spostare la galleria
+        function moveGallery(galleryId, direction) {
+            const gallery = document.getElementById(`gallery-${galleryId}`);
+            const slides = gallery.children.length;
+            
+            currentSlides[galleryId] = (currentSlides[galleryId] + direction + slides) % slides;
+            updateGallery(galleryId);
+        }
+        
+        // Funzione per andare a una slide specifica
+        function goToSlide(galleryId, slideIndex) {
+            currentSlides[galleryId] = slideIndex;
+            updateGallery(galleryId);
+        }
+        
+        // Aggiorna la posizione della galleria e gli indicatori
+        function updateGallery(galleryId) {
+            const gallery = document.getElementById(`gallery-${galleryId}`);
+            const indicators = document.getElementById(`indicators-${galleryId}`).children;
+            
+            // Aggiorna la posizione della galleria
+            gallery.style.transform = `translateX(-${currentSlides[galleryId] * 100}%)`;
+            
+            // Aggiorna gli indicatori
+            for (let i = 0; i < indicators.length; i++) {
+                indicators[i].classList.toggle('active', i === currentSlides[galleryId]);
+            }
+        }
+        
+        // Inizializza tutte le gallerie
+        window.onload = function() {
+            updateGallery('ust');
+            updateGallery('monta');
+            updateGallery('nonni');
+        };
+    </script>
+</body>
+</html>
