@@ -254,3 +254,17 @@ p {
     }
 }
 
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+b{
+    font-size: 20px;
+    color: #92a8d1;
+}
+
+i{
+    font-size: 18px;
+    color:#93c6ea;
+}
