@@ -1,486 +1,437 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio - Christian Cirillo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian Cirillo — Portfolio FSL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
 
+
+
+</style>
 </head>
 <body>
-    
-    
-    <nav>
-        <div class="menu">
-            <a href="#home" class="nav-link active" data-page="home">Home</a>
-            <a href="#chisono" class="nav-link" data-page="chisono">Chi Sono</a>
-            <a href="#terza" class="nav-link" data-page="terza">Terza</a>
-            <a href="#quarta" class="nav-link" data-page="quarta">Quarta</a>
-            <a href="#quinta" class="nav-link" data-page="quinta">Quinta</a>
-            
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- blobs -->
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+
+<!-- ─── NAV ─────────────────────────── -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">CC<span>.</span></div>
+  <ul class="nav-links">
+    <a class="nav-link active" data-page="home">Home</a>
+    <a class="nav-link" data-page="chisono">Chi Sono</a>
+    <a class="nav-link" data-page="terza">Terza</a>
+    <a class="nav-link" data-page="quarta">Quarta</a>
+    <a class="nav-link" data-page="quinta">Quinta</a>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HOME
+═══════════════════════════════════════ -->
+<div id="home" class="page active">
+  <div class="home-wrap">
+
+    <!-- hero -->
+    <div>
+      <div class="hero-eyebrow">Portfolio FSL — Blaise Pascal</div>
+      <div class="hero-name">
+        <div>CHRISTIAN</div>
+        <div class="line2">CIRILLO</div>
+      </div>
+      <p class="hero-sub">
+        Studente di informatica appassionato di sviluppo web e sistemi. Qui trovi i miei progetti FSL, le esperienze e le competenze acquisite nel percorso scolastico.
+      </p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" onclick="showPage('chisono')">Chi sono →</button>
+        <button class="btn btn-ghost" onclick="showPage('terza')">Vedi i progetti</button>
+      </div>
+    </div>
+
+    <!-- skills -->
+    <div>
+      <div class="section-label">Linguaggi &amp; Competenze</div>
+      <div class="skills-grid">
+
+        <div class="sk-card" style="--sk-clr:#e34c26">
+          <div class="sk-head">
+            <div class="sk-icon">&lt;/&gt;</div>
+            <div class="sk-score">9 / 10</div>
+          </div>
+          <div class="sk-name">HTML</div>
+          <div class="sk-bar-bg"><div class="sk-bar" data-level="90"></div></div>
         </div>
-    </nav>
-    
-    <div id="home" class="page active">
 
-        <!-- HERO -->
-        <div class="hero">
-            <div class="hero-tag">— BENVENUTO NEL MIO —</div>
-            <h1 class="hero-title">Portfolio FSL</h1>
-            <p class="hero-desc">
-                <!-- Descrizione breve: modifica questo testo con la tua presentazione -->
-                Sono Christian Cirillo, studente appassionato di informatica e sviluppo. Qui trovi i miei progetti, le mie esperienze FSL e le competenze che ho acquisito nel tempo.
-            </p>
+        <div class="sk-card" style="--sk-clr:#264de4">
+          <div class="sk-head">
+            <div class="sk-icon">#</div>
+            <div class="sk-score">6 / 10</div>
+          </div>
+          <div class="sk-name">CSS</div>
+          <div class="sk-bar-bg"><div class="sk-bar" data-level="60"></div></div>
         </div>
 
-        <!-- SKILLS -->
-        <section class="skills-section">
-            <h2 class="skills-title">Linguaggi &amp; Competenze</h2>
-            <div class="skills-grid">
+        <div class="sk-card" style="--sk-clr:#00599c">
+          <div class="sk-head">
+            <div class="sk-icon">{++}</div>
+            <div class="sk-score">8 / 10</div>
+          </div>
+          <div class="sk-name">C++</div>
+          <div class="sk-bar-bg"><div class="sk-bar" data-level="80"></div></div>
+        </div>
 
-                <div class="skill-card" style="--accent:#e34c26;">
-                    <div class="skill-icon">&#60;/&#62;</div>
-                    <div class="skill-name">HTML</div>
-                    <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-level="90" style="--clr:#e34c26;"></div>
-                    </div>
-                    <div class="skill-score">9 / 10</div>
-                </div>
+        <div class="sk-card" style="--sk-clr:#9b4f96">
+          <div class="sk-head">
+            <div class="sk-icon">◇</div>
+            <div class="sk-score">4 / 10</div>
+          </div>
+          <div class="sk-name">C#</div>
+          <div class="sk-bar-bg"><div class="sk-bar" data-level="40"></div></div>
+        </div>
 
-                <div class="skill-card" style="--accent:#264de4;">
-                    <div class="skill-icon">&#35;</div>
-                    <div class="skill-name">CSS</div>
-                    <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-level="60" style="--clr:#264de4;"></div>
-                    </div>
-                    <div class="skill-score">6 / 10</div>
-                </div>
+        <div class="sk-card" style="--sk-clr:#f7df1e">
+          <div class="sk-head">
+            <div class="sk-icon">JS</div>
+            <div class="sk-score">6 / 10</div>
+          </div>
+          <div class="sk-name">JavaScript</div>
+          <div class="sk-bar-bg"><div class="sk-bar" data-level="60"></div></div>
+        </div>
 
-                <div class="skill-card" style="--accent:#00599c;">
-                    <div class="skill-icon">&#123;&#43;&#43;&#125;</div>
-                    <div class="skill-name">C++</div>
-                    <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-level="80" style="--clr:#00599c;"></div>
-                    </div>
-                    <div class="skill-score">8 / 10</div>
-                </div>
+        <div class="sk-card" style="--sk-clr:#f89820">
+          <div class="sk-head">
+            <div class="sk-icon">☕</div>
+            <div class="sk-score">5 / 10</div>
+          </div>
+          <div class="sk-name">Java</div>
+          <div class="sk-bar-bg"><div class="sk-bar" data-level="50"></div></div>
+        </div>
 
-                <div class="skill-card" style="--accent:#9b4f96;">
-                    <div class="skill-icon">&#9671;</div>
-                    <div class="skill-name">C#</div>
-                    <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-level="40" style="--clr:#9b4f96;"></div>
-                    </div>
-                    <div class="skill-score">4 / 10</div>
-                </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="skill-card" style="--accent:#f7df1e;">
-                    <div class="skill-icon">JS</div>
-                    <div class="skill-name">JavaScript</div>
-                    <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-level="60" style="--clr:#f7df1e;"></div>
-                    </div>
-                    <div class="skill-score">6 / 10</div>
-                </div>
+<!-- ═══════════════════════════════════════
+     CHI SONO
+═══════════════════════════════════════ -->
+<div id="chisono" class="page">
+  <div class="about-wrap">
+    <div>
+      <div class="about-tag">Chi<br><span>Sono.</span></div>
 
-                <div class="skill-card" style="--accent:#f89820;">
-                    <div class="skill-icon">&#9749;</div>
-                    <div class="skill-name">Java</div>
-                    <div class="skill-bar-wrap">
-                        <div class="skill-bar" data-level="50" style="--clr:#f89820;"></div>
-                    </div>
-                    <div class="skill-score">5 / 10</div>
-                </div>
+      <div class="about-block">
+        <div class="about-block-title">// Presentazione</div>
+        <p>Mi chiamo <b>Christian Cirillo</b>, uno studente appassionato di tecnologia e sviluppo web.
+        Mi piace l'informatica in tutte le sue forme: che sia ad alto o a basso livello, per lo sviluppo grafico o per quello logico.</p>
+        <p>Frequento l'Istituto Blaise Pascal, indirizzo informatico, e mi trovo molto bene soprattutto con le materie di indirizzo.
+        Mi sono appassionato all'informatica durante le medie, imparando come primo linguaggio il <i>C#</i>.</p>
+      </div>
 
-            </div>
-        </section>
+      <div class="about-block">
+        <div class="about-block-title">// Competenze</div>
+        <p>In questi anni di superiori ho imparato molte cose sia per conto mio che a scuola.
+        Sono diventato molto bravo nell'uso di <b>HTML e CSS</b>, completando lezioni su Codecademy e applicando le nozioni in progetti personali.</p>
+        <p>Ho imparato a usare in modo discreto il <b>C++</b> e l'<b>Assembly 8086</b> (quest'ultimo mi è piaciuto talmente tanto che ho approfondito anche per conto mio).
+        Ho imparato per conto mio anche un livello base di <i>JavaScript</i> e mi piacerebbe imparare molto di più.</p>
+      </div>
 
+      <div class="about-block">
+        <div class="about-block-title">// Riflessioni personali</div>
+        <p>Ho le idee ancora in evoluzione sul mio futuro: non sono certamente sicuro se andare all'università o fare corsi per certificazioni e mettermi subito a lavorare.</p>
+        <p>Nei primi 2 anni di superiori ho avuto una bella impressione della <b>chimica</b>, una materia che mi ha accompagnato e che mi è piaciuta molto. Ci sono tante strade possibili e bisogna scegliere con cura.</p>
+      </div>
+
+      <div class="about-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">C++</span>
+        <span class="tag">Assembly 8086</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Java</span>
+        <span class="tag">C#</span>
+      </div>
     </div>
 
-    <div id="chisono" class="page">
-        <section>
-            <h2>CHI SONO?</h2>
-            <div class="box">
-                <div>
-                    <p>
-                        Mi chiamo Christian Cirillo, uno studente appassionato di tecnologia e sviluppo web. <br>
-                        mi piace l'informatica in tutte le sue forme: che sia ad alto o a basso livello,
-                        che sia per lo sviluppo grafico o per lo sviluppo logico. <br>
-                        Frequento l'istituto blaise pascal indirizzo informatico da un anno e mi trovo
-                        molto bene soprattutto con le materie di indirizzo. <br>
-                        Mi sono appasionato all'informatica durante gli anni delle medie imparando come mio primo linguaggio il 
-                        C#, oggi mi rendo conto che e' stata una scelta azzardata perche non e' un linguaggio semplice
-                        infatti conosco solo le basi di questo linguaggio.
-                    </p>
-                    <p>
-                        <b>Le mie competenze:</b> <br>
-                        In questi anni di superiori ho imparato molte cose sia per conto mio che soprattutto a scuola. <br>
-                        Infatti sono diventanto molto bravo nell'uso dell'html e del css anche avendolo usato in precedenza
-                        completando qualche lezione su codecademy e usando le nozioni apprese con un progetto personale. <br>
-                        ho imparato a usare in modo discreto il c++ e l'assembly 8086 (quest'ultimo mi e' piaciuto talmente tanto
-                        che ho deciso di andare anche un po avanti per conto mio) che mi saranno molto utili per il futuro
-                        dato che sono dei linguaggi molto versatili e molto richiesti (principalmente il c++). <br>
-                        Ho imparato per conto mio anche un livello molto basso di <i>JavaScript</i> mi piacerebbe imparare molto di più
-                        di questo linguaggio perché non si finisce mai di imparare. <br>
-                    </p>
-                    <p>
-                        <b>Riflessioni personali:</b> <br>
-                        Ho le idee poco chiare sul mio futuro dato che non sono certamente sicuro di andare all'università 
-                        o fare dei corsi per prendere certificazioni e mettermi a lavorare. <br>  
-                        Inoltre nei primi 2 anni di superiori ho avuto una bella impressione della chimica dato che e' stata una materia che mi 
-                        ha accompagnato per i primi 2 anni di superiori 
-                        e mi è piaciuta molto e penso che potrei percorrere anche questa strada. <br>
-                        Ora non sono sicuro di tutto cio, pero' ci sono tante possibili decisioni che possono essere prese e bisogna quindi
-                        decidere con cura. <br>
-                    </p>  
-                </div>
-                <div>
-                    <img src="img/img14.jpeg" height="350" width="350">
-                </div>
-            </div>
-        </section>
+    <div class="about-img-col">
+      <div class="about-img-frame">
+        <img src="img/img14.jpeg" alt="Christian Cirillo">
+      </div>
     </div>
-    
-    <div id="terza" class="page">
-        <section>
+  </div>
+</div>
 
-            <!-- ===== UST ===== -->
-            <div class="project">
-                <div class="project-title">UST</div>
-                <!-- TESTO SOPRA -->
-                <div class="project-text">
-                    <p>
-                        Questo è stato il nostro primo incontro di FSL con il Prof. Vario 
-                        che ci ha spiegato cosa fosse il FSL, di cosa si trattava, come fosse il lavoro
-                        e tutti argomenti di questo genere.
-                    </p>
-                    <p>
-                        L'incontro si e' tenuto su meet in videolezione con slide e schemi che ci spiegava come si 
-                        dividesse il lavoro. <br>
-                        alla fine dell'incontro abbiamo dovuto completare un test su tutto quello che ci avevano spiegato
-                        e quello sarebbe stato il primo voto di FSL. 
-                    </p>
-                    <p>
-                        <b>Riflessioni personali: </b> <br>
-                        penso che questo incontro sia servito anche perche ho capito molte più cose 
-                        sul lavoro e sui miei dubbi riguardanti il FSL. <br>
-                        Poi devo dire che il Prof. Vario è stato molto chiaro grazie alle sue slide
-                        e alla voglia che ci metteva a fare tutto ciò. <br>
-                        Per me non è stata per niente un'attività noiosa, anzi, l'ho trovata molto interessante e utile per capire meglio come funziona il mondo del lavoro. <br>
-                        Mi ha dato una prospettiva più chiara su cosa aspettarmi e su come affrontare situazioni lavorative in futuro. <br>
-                    </p>
-                    <p>
-                        Inoltre, penso che questo incontro sia stato un'ottima opportunità per riflettere su come affrontare il mondo del lavoro in modo più consapevole. <br>
-                        Mi ha aiutato a capire l'importanza di avere una buona preparazione e di essere sempre pronti ad adattarsi a nuove situazioni. <br>
-                        Credo che esperienze come questa siano fondamentali per noi studenti, perché ci permettono di acquisire una visione più chiara di ciò che ci aspetta dopo la scuola. <br>
-                        È stato anche interessante vedere come il lavoro di squadra e la comunicazione siano aspetti cruciali in qualsiasi ambiente lavorativo. <br>
-                        In definitiva, ritengo che questo incontro abbia rappresentato un passo importante nel mio percorso di crescita personale e professionale.
-                    </p>
-                </div>
-                
-            </div>
+<!-- ═══════════════════════════════════════
+     TERZA
+═══════════════════════════════════════ -->
+<div id="terza" class="page">
+  <div class="projects-wrap">
+    <div class="page-heading">Terza Anno</div>
 
-            <!-- ===== MONTA E SMONTA ===== -->
-            <div class="project">
-                <div class="project-title">MONTA E SMONTA</div>
-                <!-- TESTO SOPRA -->
-                <div class="project-text">
-                    <p>
-                        il <i>Monta & Smonta</i> è stato il secondo progetto di FSL il quale consisteva nel smontare
-                        per poi rimontare un computer. <br>
-                        Una volta aperto il case ti trovi davanti molti componenti poi essendo computer vecchi
-                        molti non funzionavano ma mi sono molto divertito a smontare e rimontare i PC anche 
-                        perche lo avevo gia fatto in precedenza con il mio computer fisso a casa (solo montarlo) ed 
-                        è stata la mia seconda volta ad avere a che fare con i componenti di un PC 
-                        e devo dire che è stata un'esperienza molto interessante e formativa. <br>
-                        Ho imparato a riconoscere i vari componenti hardware, come la scheda madre, 
-                        il processore, l'alimentatore e i dischi rigidi (purtroppo a me mancavano le RAM). <br>
-                        Inoltre, ho capito meglio come questi componenti lavorano insieme per far funzionare un computer. <br>
-                    </p>
-                    <p>
-                        <b>Riflessioni personali: </b> <br>
-                        penso che questa attivita sia stata molto formativa per noi soprattutto per chi, un computer, non lo aveva mai 
-                        visto da vicino. <br>
-                        È stato molto interessante vedere come ogni pezzo si incastri perfettamente per creare un sistema funzionante. <br>
-                        Ritengo che attività pratiche come questa siano fondamentali per consolidare le conoscenze teoriche e per sviluppare competenze utili nel mondo del lavoro. <br>
-                    </p>
-                    <p>
-                        Infine, è stata un'esperienza molto positiva che mi ha arricchito sia dal punto di vista tecnico che personale. <br>
-                    </p>
-                </div>
-                <!-- GALLERY SOTTO -->
-                <div class="gallery-container">
-                    <div class="gallery" id="gallery-monta">
-                        <div class="gallery-img"><img src="img/img1.jpeg" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img3.jpeg" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img4.jpeg" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img9.jpeg" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img13.jpeg" width="600" height="550"></div>
-                    </div>
-                    <button class="gallery-control gallery-prev" onclick="moveGallery('monta', -1)">&#10094;</button>
-                    <button class="gallery-control gallery-next" onclick="moveGallery('monta', 1)">&#10095;</button>
-                </div>
-                <div class="gallery-indicators" id="indicators-monta">
-                    <span class="indicator active" onclick="goToSlide('monta', 0)"></span>
-                    <span class="indicator" onclick="goToSlide('monta', 1)"></span>
-                    <span class="indicator" onclick="goToSlide('monta', 2)"></span>
-                    <span class="indicator" onclick="goToSlide('monta', 3)"></span>
-                    <span class="indicator" onclick="goToSlide('monta', 4)"></span>
-                </div>
-            </div>
-
-            <!-- ===== NONNI SMART ===== -->
-            <div class="project">
-                <div class="project-title">NONNI SMART</div>
-                <!-- TESTO SOPRA -->
-                <div class="project-text">
-                    <p>
-                        Per concludere abbiamo i <i>Nonni Smart</i> che più che un lavoro di FSL è stato un
-                        vero e proprio percorso che ci ha offerto il Bus Connect della durata di 5 settimane, un'ora e mezza 
-                        a settimana. <br>
-                        Il nostro compito era di girare i nostri ruoli quotidiani, ovvero fare noi i professori e gli anziani gli alunni. <br>
-                        In base alle richieste degli anziani (cose che volevano imparare a fare) ci siamo divisi il lavoro per le diverse settimane
-                        e siamo riusciti a concludere tutti i programmi che ci avevano chiesto all'inizio e durante. <br>
-                    </p>
-                    <p>
-                        <b>Cosa ne penso: </b> <br>
-                        Penso che questa attivita sia stata di grande aiuto sia per noi che per gli anziani,
-                        cambiare i ruoli, dimostrare che anche se siamo adolescenti possiamo essere capaci di insegnare 
-                        qualcosa a qualcuno, che siamo capaci di spiegare a qualcuno qualcosa avendo imparato nel corso di
-                        questi anni qualcosa. <br>
-                        Mi sono sentito molto fiero vedere gli anziani imparare e acquisire nuove competenze che li hanno aiutati a sentirsi più sicuri nell'uso della tecnologia. <br>
-                        Inoltre, questa esperienza mi ha insegnato l'importanza della pazienza e della comunicazione efficace, qualità fondamentali non solo per insegnare, ma anche per lavorare insieme. <br>
-                        Credo che attività come questa siano un'opportunità unica per crescere sia a livello personale che professionale. <br>
-                    </p>
-                    <p>
-                        Infine, penso che questa attività sia stata estremamente utile e significativa. <br>
-                        Esperienze come questa ci insegnano l'importanza della collaborazione, della pazienza e della capacità di adattarsi a diverse situazioni (come spiegato dal Prof. Vario nell'UST). <br>
-                        Sono convinto che attività di questo tipo siano fondamentali per prepararci al futuro e per sviluppare competenze che saranno utili in qualsiasi ambito lavorativo.
-                    </p>
-                </div>
-                <!-- GALLERY SOTTO -->
-                <div class="gallery-container">
-                    <div class="gallery" id="gallery-nonni">
-                        <div class="gallery-img"><img src="img/img16.jpeg" alt="" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img15.jpeg" alt="" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img17.jpeg" alt="" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img18.jpeg" alt="" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img19.jpeg" alt="" width="600" height="550"></div>
-                    </div>
-                    <button class="gallery-control gallery-prev" onclick="moveGallery('nonni', -1)">&#10094;</button>
-                    <button class="gallery-control gallery-next" onclick="moveGallery('nonni', 1)">&#10095;</button>
-                </div>
-                <div class="gallery-indicators" id="indicators-nonni">
-                    <span class="indicator active" onclick="goToSlide('nonni', 0)"></span>
-                    <span class="indicator" onclick="goToSlide('nonni', 1)"></span>
-                    <span class="indicator" onclick="goToSlide('nonni', 2)"></span>
-                    <span class="indicator" onclick="goToSlide('nonni', 3)"></span>
-                    <span class="indicator" onclick="goToSlide('nonni', 4)"></span>
-                </div>
-            </div>
-
-        </section>
-    </div>
-    
-    <div id="quarta" class="page">
-        <section>
-
-            <!-- ===== PROGETTO 1 ===== -->
-            <div class="project">
-                <div class="project-title">CNA</div>
-                <div class="project-text">
-                    <p>
-                        Nell’incontro FSL del 30 settembre 2025 al Tecnopolo di Reggio Emilia, promosso dalla CNA, 
-                        si è iniziato parlando delle possibilità dopo il diploma. Sono stati spiegati in modo semplice 
-                        i percorsi universitari (triennale, magistrale e a ciclo unico) e gli ITS Academy, corsi di due anni più pratici e collegati 
-                        alle aziende, utili per entrare prima nel mondo del lavoro.
-                        <br>
-                        <br>
-                        Poi si è affrontato il tema delle competenze: oltre a quelle tecniche (hard skills), oggi sono molto importanti anche le soft skills, 
-                        come saper comunicare, lavorare con gli altri, adattarsi e risolvere problemi.
-                        Si è parlato anche di orientamento, presentando il modello di John Holland, 
-                        che aiuta a capire quali lavori sono più adatti in base alla propria personalità.
-                        <br>
-                        <br>
-                        Infine, è stato descritto il momento economico attuale: l’Italia è ancora forte nel settore manifatturiero, 
-                        ma deve affrontare diversi cambiamenti. Alcuni lavori stanno scomparendo, mentre altri stanno nascendo, 
-                        soprattutto in ambiti come tecnologia e innovazione, 
-                        dove le competenze STEM sono sempre più richieste.
-                        <br><br>
-                    </p>
-                    <p>
-                        <b>Riflessioni personali: </b> <br>
-                        Ciò che quest'incontro mi ha fatto pensare è stato quanto noi giovani possiamo essere utili soprtattuto in un campo come il nostro 
-                        che è l'informatica.
-                        Ci hanno fatto notare quanto dobbiamo curare le nostre soft skills e il nostro modo di comunicare con gli altri ma soprattutto quanto sia importante 
-                        curare questi aspetti.
-                        Da questo incontro mi porto dietro la consapevolezza di poter tornare utile se curo i miei punti di forza e impegnarmi a lavorare con gli altri.
-                    </p>
-                </div>
-                <div class="gallery-container">
-                    <div class="gallery" id="gallery-q4p1">
-                        <div class="gallery-img"><img src="img/img23.jpeg" alt="" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img27.jpeg" alt="" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img28.jpeg" alt="" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img21.jpeg" alt="" width="600" height="550"></div>
-                        <div class="gallery-img"><img src="img/img29.jpeg" alt="" width="600" height="550"></div>
-                    </div>
-                    <button class="gallery-control gallery-prev" onclick="moveGallery('q4p1', -1)">&#10094;</button>
-                    <button class="gallery-control gallery-next" onclick="moveGallery('q4p1', 1)">&#10095;</button>
-                </div>
-                <div class="gallery-indicators" id="indicators-q4p1">
-                    <span class="indicator active" onclick="goToSlide('q4p1', 0)"></span>
-                    <span class="indicator" onclick="goToSlide('q4p1', 1)"></span>
-                    <span class="indicator" onclick="goToSlide('q4p1', 2)"></span>
-                    <span class="indicator" onclick="goToSlide('q4p1', 3)"></span>
-                    <span class="indicator" onclick="goToSlide('q4p1', 4)"></span>
-                </div>
-            </div>
-
-            <!-- ===== PROGETTO 2 ===== -->
-            <div class="project">
-                <div class="project-title">MI PRESENTO</div>
-                <div class="project-text">
-                    <p>
-                        Nell’aula magna della scuola si è svolto l’incontro “Mi Presento”, incentrato su come presentarsi in modo efficace nel mondo del lavoro. 
-                        Una parte importante è stata dedicata al curriculum vitae, visto non come un modulo da compilare, ma come una vera presentazione personale. 
-                        È stato spiegato come costruirlo seguendo un formato chiaro, come quello Europass, dando spazio sia alle capacità tecniche sia alle qualità personali. 
-                        È emerso anche che parlare delle difficoltà superate può essere positivo, perché fa capire come si reagisce alle situazioni.
-                        <br><br>
-                        Un altro aspetto trattato riguarda il colloquio: prepararsi prima, informandosi sull’azienda, è fondamentale per fare una buona impressione. 
-                        Durante l’incontro sono stati dati suggerimenti su come comportarsi e su quali domande fare, concentrandosi soprattutto sul ruolo e sulle attività richieste.
-                        <br><br>
-                        Nel complesso, l’esperienza ha fornito indicazioni pratiche per conoscersi meglio, migliorare il proprio modo di comunicare e affrontare con più sicurezza sia la 
-                        stesura del CV sia un eventuale colloquio di lavoro.
-                    </p>
-                    <p>
-                        <b>Riflessioni personali: </b> <br>
-                        Penso che quest'incontro è stato un buon modo per immergerci in quello che è il mondo del lavoro partendo dalla cosa più basilare di tutte, il curriculum.
-                        È stato molto interessante sentire quali cose fossero importanti da mettere in un curriculum e cosa evitare perchè io da giovane quale sono non avrei mai saputo
-                        senza quest'incontro come fare bene un curriculum per un colloquio di lavoro ma soprattutto ciò che devo sapere quando mi presento ad un colloquio di lavoro (ad esempio
-                        possibili domende, informazioni sull'azienda, ecc.).
-                    </p>
-                </div>
-                
-                <br><br><br>
-            <!-- ===== PROGETTO 3 ===== -->
-            <div class="project">
-                <div class="project-title">POLARITY</div>
-                <div class="project-text">
-                    <p>
-                        Nell’aula magna della scuola sono venuti dei ragazzi che lavorano nell’azienda Polarity e ci hanno raccontato in cosa consiste il loro lavoro. 
-                        All’inizio hanno parlato dei linguaggi di programmazione che utilizzano, come JavaScript, HTML, CSS, C++ e Python, 
-                        cioè linguaggi che in parte conosciamo già anche noi.
-                        Ci hanno anche spiegato come loro progettano software su misura per i loro clienti e come gestiscono tutte le informazioni che loro gli danno.
-                        <br><br>
-                        Poi ci hanno spiegato meglio cosa fanno concretamente: lavorano soprattutto con applicazioni web, server e database. 
-                        Ci hanno fatto capire come questi elementi sono collegati tra loro e come vengono usati per creare siti e servizi online. 
-                        È stato interessante perché abbiamo visto come le cose che studiamo a scuola vengono applicate davvero nel lavoro.
-                        <br><br>
-                        In generale, l’incontro è stato utile per capire meglio il mondo della programmazione e vedere più da vicino come lavora un’azienda informatica.
-                    </p>
-                    <p>
-                        <b>Riflessioni personali: </b> <br>
-                        È stato molto interessate ascoltare il modo in cui i ragazzi di Polarity lavorano soprattutto perchè mi interessano molto i software e i siti web,
-                        credo che aiutino a semplificare la vita.
-                        Hanno parlato dei linguaggi che usano di quello a cui bisogna fare attenzione quando si progetta in back-end e a come funziona un server.
-                        Mi sarebbe piaciuto fare lo stage da loro purtroppo non ho potuto inserire la scelta per via della lontananza.
-                    </p>
-                </div>
-                
-            </div>
-
-        </section>
-    </div>
-    
-    <div id="quinta" class="page">
-        <section>
-            <div class="coming-soon">COMING SOON</div>
-        </section>
+    <!-- UST -->
+    <div class="proj">
+      <div class="proj-header">
+        <div class="proj-num">01</div>
+        <div class="proj-title">UST</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Questo è stato il nostro primo incontro di FSL con il Prof. Vario, che ci ha spiegato cosa fosse il FSL, di cosa si trattava, come fosse il lavoro e tutti gli argomenti di questo genere.</p>
+          <p>L'incontro si è tenuto su Meet in videolezione con slide e schemi che ci spiegavano come si dividesse il lavoro. Alla fine dell'incontro abbiamo dovuto completare un test su tutto quello che ci avevano spiegato: quello sarebbe stato il primo voto di FSL.</p>
+        </div>
+        <div class="reflection">
+          <div class="reflection-label">Riflessioni personali</div>
+          Penso che questo incontro sia servito molto perché ho capito molte più cose sul lavoro e sui miei dubbi riguardanti il FSL. Il Prof. Vario è stato molto chiaro grazie alle sue slide e alla voglia che ci metteva a fare tutto ciò. Non è stata per niente un'attività noiosa — ho acquisito una visione più chiara su come affrontare il mondo del lavoro in modo più consapevole.
+        </div>
+      </div>
     </div>
 
-    <script>
-        // Funzione per gestire la navigazione tra le pagine
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Rimuovi active da tutti i link e aggiungi a quello cliccato
-                document.querySelectorAll('.nav-link').forEach(item => item.classList.remove('active'));
-                this.classList.add('active');
-                
-                // Nascondi tutte le pagine e mostra quella selezionata
-                document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
-                const targetPage = this.getAttribute('data-page');
-                document.getElementById(targetPage).classList.add('active');
-            });
-        });
-        
-        // Oggetti per tenere traccia della posizione corrente della galleria
-        const currentSlides = {
-            'ust': 0,
-            'monta': 0,
-            'nonni': 0,
-            'q4p1': 0,
-            'q4p2': 0,
-            'q4p3': 0
-        };
-        
-        // Funzione per spostare la galleria
-        function moveGallery(galleryId, direction) {
-            const gallery = document.getElementById(`gallery-${galleryId}`);
-            const slides = gallery.children.length;
-            
-            currentSlides[galleryId] = (currentSlides[galleryId] + direction + slides) % slides;
-            updateGallery(galleryId);
-        }
-        
-        // Funzione per andare a una slide specifica
-        function goToSlide(galleryId, slideIndex) {
-            currentSlides[galleryId] = slideIndex;
-            updateGallery(galleryId);
-        }
-        
-        // Aggiorna la posizione della galleria e gli indicatori
-        function updateGallery(galleryId) {
-            const gallery = document.getElementById(`gallery-${galleryId}`);
-            const indicators = document.getElementById(`indicators-${galleryId}`).children;
-            
-            // Aggiorna la posizione della galleria
-            gallery.style.transform = `translateX(-${currentSlides[galleryId] * 100}%)`;
-            
-            // Aggiorna gli indicatori
-            for (let i = 0; i < indicators.length; i++) {
-                indicators[i].classList.toggle('active', i === currentSlides[galleryId]);
-            }
-        }
-        
-        // Inizializza tutte le gallerie
-        window.onload = function() {
-            updateGallery('ust');
-            updateGallery('monta');
-            updateGallery('nonni');
-            updateGallery('q4p1');
-            updateGallery('q4p2');
-            updateGallery('q4p3');
-            animateSkillBars();
-        };
+    <!-- MONTA E SMONTA -->
+    <div class="proj">
+      <div class="proj-header">
+        <div class="proj-num">02</div>
+        <div class="proj-title">Monta <span>&</span> Smonta</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Il <i>Monta &amp; Smonta</i> è stato il secondo progetto di FSL: smontare per poi rimontare un computer. Una volta aperto il case ci si trova davanti a molti componenti — essendo computer vecchi, molti non funzionavano, ma mi sono molto divertito.</p>
+          <p>Ho imparato a riconoscere i vari componenti hardware: scheda madre, processore, alimentatore e dischi rigidi (purtroppo a me mancavano le RAM). Ho capito meglio come questi componenti lavorano insieme per far funzionare un computer.</p>
+        </div>
 
-        function animateSkillBars() {
-            document.querySelectorAll('.skill-bar').forEach(bar => {
-                const level = bar.getAttribute('data-level');
-                setTimeout(() => { bar.style.width = level + '%'; }, 300);
-            });
-        }
+        <div class="gallery-wrap">
+          <div class="gallery-stage">
+            <div class="gallery-track" id="gallery-monta">
+              <div class="gallery-slide"><img src="img/img1.jpeg" alt="Monta e Smonta 1" width="550px" height="450px"></div>
+              <div class="gallery-slide"><img src="img/img3.jpeg" alt="Monta e Smonta 2" width="550px" height="450px"></div>
+              <div class="gallery-slide"><img src="img/img4.jpeg" alt="Monta e Smonta 3" width="550px" height="450px"></div>
+              <div class="gallery-slide"><img src="img/img9.jpeg" alt="Monta e Smonta 4" width="550px" height="450px"></div>
+              <div class="gallery-slide"><img src="img/img13.jpeg" alt="Monta e Smonta 5"width="550px" height="450px"></div>
+            </div>
+            <button class="gallery-btn prev" onclick="moveGallery('monta',-1)">&#8249;</button>
+            <button class="gallery-btn next" onclick="moveGallery('monta',1)">&#8250;</button>
+          </div>
+          <div class="gallery-footer" id="dots-monta">
+            <div class="dot active" onclick="goSlide('monta',0)"></div>
+            <div class="dot" onclick="goSlide('monta',1)"></div>
+            <div class="dot" onclick="goSlide('monta',2)"></div>
+            <div class="dot" onclick="goSlide('monta',3)"></div>
+            <div class="dot" onclick="goSlide('monta',4)"></div>
+          </div>
+        </div>
 
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function() {
-                if (this.getAttribute('data-page') === 'home') {
-                    document.querySelectorAll('.skill-bar').forEach(b => b.style.width = '0%');
-                    setTimeout(animateSkillBars, 200);
-                }
-            });
-        });
-    </script>
+        <div class="reflection">
+          <div class="reflection-label">Riflessioni personali</div>
+          Penso che questa attività sia stata molto formativa, soprattutto per chi un computer non lo aveva mai visto da vicino. È stato molto interessante vedere come ogni pezzo si incastri perfettamente per creare un sistema funzionante. Attività pratiche come questa sono fondamentali per consolidare le conoscenze teoriche e sviluppare competenze utili nel mondo del lavoro.
+        </div>
+      </div>
+    </div>
+
+    <!-- NONNI SMART -->
+    <div class="proj">
+      <div class="proj-header">
+        <div class="proj-num">03</div>
+        <div class="proj-title">Nonni <span>Smart</span></div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Per concludere i <i>Nonni Smart</i>: più che un lavoro di FSL, è stato un vero e proprio percorso offerto dal Bus Connect, della durata di 5 settimane, un'ora e mezza a settimana.</p>
+          <p>Il nostro compito era ribaltare i nostri ruoli quotidiani: fare noi i professori e gli anziani gli alunni. In base alle richieste degli anziani ci siamo divisi il lavoro per le diverse settimane e siamo riusciti a completare tutti i programmi richiesti.</p>
+        </div>
+
+        <div class="gallery-wrap">
+          <div class="gallery-stage">
+            <div class="gallery-track" id="gallery-nonni">
+              <div class="gallery-slide"><img src="img/img16.jpeg" alt="Nonni Smart 1"></div>
+              <div class="gallery-slide"><img src="img/img15.jpeg" alt="Nonni Smart 2"></div>
+              <div class="gallery-slide"><img src="img/img17.jpeg" alt="Nonni Smart 3"></div>
+              <div class="gallery-slide"><img src="img/img18.jpeg" alt="Nonni Smart 4"></div>
+              <div class="gallery-slide"><img src="img/img19.jpeg" alt="Nonni Smart 5"></div>
+            </div>
+            <button class="gallery-btn prev" onclick="moveGallery('nonni',-1)">&#8249;</button>
+            <button class="gallery-btn next" onclick="moveGallery('nonni',1)">&#8250;</button>
+          </div>
+          <div class="gallery-footer" id="dots-nonni">
+            <div class="dot active" onclick="goSlide('nonni',0)"></div>
+            <div class="dot" onclick="goSlide('nonni',1)"></div>
+            <div class="dot" onclick="goSlide('nonni',2)"></div>
+            <div class="dot" onclick="goSlide('nonni',3)"></div>
+            <div class="dot" onclick="goSlide('nonni',4)"></div>
+          </div>
+        </div>
+
+        <div class="reflection">
+          <div class="reflection-label">Cosa ne penso</div>
+          Penso che questa attività sia stata di grande aiuto sia per noi che per gli anziani. Cambiare i ruoli, dimostrare che anche se siamo adolescenti possiamo essere capaci di insegnare qualcosa — è stato significativo. Mi sono sentito molto fiero nel vedere gli anziani acquisire nuove competenze. Questa esperienza mi ha insegnato l'importanza della pazienza e della comunicazione efficace.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     QUARTA
+═══════════════════════════════════════ -->
+<div id="quarta" class="page">
+  <div class="projects-wrap">
+    <div class="page-heading">Quarta Anno</div>
+
+    <!-- CNA -->
+    <div class="proj">
+      <div class="proj-header">
+        <div class="proj-num">01</div>
+        <div class="proj-title">CNA</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Nell'incontro FSL del 30 settembre 2025 al Tecnopolo di Reggio Emilia, promosso dalla CNA, si è iniziato parlando delle possibilità dopo il diploma. Sono stati spiegati i percorsi universitari (triennale, magistrale, ciclo unico) e gli <b>ITS Academy</b>, corsi di due anni più pratici e collegati alle aziende.</p>
+          <p>Si è affrontato il tema delle competenze: oltre a quelle tecniche (hard skills), oggi sono molto importanti anche le <b>soft skills</b>. Si è parlato del modello di John Holland, che aiuta a capire quali lavori sono più adatti in base alla propria personalità.</p>
+          <p>Infine, è stato descritto il momento economico attuale: l'Italia è ancora forte nel settore manifatturiero, ma deve affrontare molti cambiamenti. Alcuni lavori stanno scomparendo mentre altri nascono, soprattutto in ambiti come tecnologia e innovazione, dove le competenze <b>STEM</b> sono sempre più richieste.</p>
+        </div>
+
+        <div class="gallery-wrap">
+          <div class="gallery-stage">
+            <div class="gallery-track" id="gallery-q4p1">
+              <div class="gallery-slide"><img src="img/img23.jpeg" alt="CNA 1"></div>
+              <div class="gallery-slide"><img src="img/img27.jpeg" alt="CNA 2"></div>
+              <div class="gallery-slide"><img src="img/img28.jpeg" alt="CNA 3"></div>
+              <div class="gallery-slide"><img src="img/img21.jpeg" alt="CNA 4"></div>
+              <div class="gallery-slide"><img src="img/img29.jpeg" alt="CNA 5"></div>
+            </div>
+            <button class="gallery-btn prev" onclick="moveGallery('q4p1',-1)">&#8249;</button>
+            <button class="gallery-btn next" onclick="moveGallery('q4p1',1)">&#8250;</button>
+          </div>
+          <div class="gallery-footer" id="dots-q4p1">
+            <div class="dot active" onclick="goSlide('q4p1',0)"></div>
+            <div class="dot" onclick="goSlide('q4p1',1)"></div>
+            <div class="dot" onclick="goSlide('q4p1',2)"></div>
+            <div class="dot" onclick="goSlide('q4p1',3)"></div>
+            <div class="dot" onclick="goSlide('q4p1',4)"></div>
+          </div>
+        </div>
+
+        <div class="reflection">
+          <div class="reflection-label">Riflessioni personali</div>
+          Questo incontro mi ha fatto riflettere su quanto noi giovani possiamo essere utili, soprattutto in un campo come l'informatica. Mi porto dietro la consapevolezza di poter tornare utile se curo i miei punti di forza e mi impegno a lavorare con gli altri.
+        </div>
+      </div>
+    </div>
+
+    <!-- MI PRESENTO -->
+    <div class="proj">
+      <div class="proj-header">
+        <div class="proj-num">02</div>
+        <div class="proj-title">Mi <span>Presento</span></div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Nell'aula magna della scuola si è svolto l'incontro "Mi Presento", incentrato su come presentarsi in modo efficace nel mondo del lavoro. Una parte importante è stata dedicata al <b>curriculum vitae</b>, visto non come un modulo da compilare, ma come una vera presentazione personale seguendo il formato Europass.</p>
+          <p>Un altro aspetto trattato riguarda il <b>colloquio</b>: prepararsi prima, informandosi sull'azienda, è fondamentale per fare una buona impressione. Durante l'incontro sono stati dati suggerimenti su come comportarsi e su quali domande fare.</p>
+        </div>
+        <div class="reflection">
+          <div class="reflection-label">Riflessioni personali</div>
+          Penso che quest'incontro sia stato un buon modo per immergerci nel mondo del lavoro partendo dalla cosa più basilare: il curriculum. È stato molto interessante sentire quali cose siano importanti da inserire e cosa evitare. Da giovane non avrei mai saputo come fare bene un curriculum o come comportarmi in un colloquio senza questa esperienza.
+        </div>
+      </div>
+    </div>
+
+    <!-- POLARITY -->
+    <div class="proj">
+      <div class="proj-header">
+        <div class="proj-num">03</div>
+        <div class="proj-title">Polarity</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-text">
+          <p>Nell'aula magna sono venuti dei ragazzi che lavorano nell'azienda <b>Polarity</b> e ci hanno raccontato il loro lavoro. Hanno parlato dei linguaggi che utilizzano: <i>JavaScript</i>, HTML, CSS, C++ e Python — in parte linguaggi che già conoscevamo.</p>
+          <p>Ci hanno spiegato come progettano software su misura per i clienti e come gestiscono le informazioni. Lavorano principalmente con <b>applicazioni web, server e database</b> — è stato interessante vedere come le cose studiate a scuola vengano applicate davvero nel lavoro.</p>
+        </div>
+        <div class="reflection">
+          <div class="reflection-label">Riflessioni personali</div>
+          È stato molto interessante ascoltare il modo in cui i ragazzi di Polarity lavorano, soprattutto perché mi interessano molto i software e i siti web. Mi sarebbe piaciuto fare lo stage da loro, purtroppo non ho potuto inserire la scelta per via della lontananza.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     QUINTA
+═══════════════════════════════════════ -->
+<div id="quinta" class="page">
+  <div class="coming-wrap">
+    <div class="coming-num">// Anno 5 — 2025/26</div>
+    <div class="coming-title">Coming<br><span>Soon</span></div>
+    <div class="coming-sub">I contenuti saranno pubblicati nel corso dell'anno.</div>
+  </div>
+</div>
+
+<!-- ─── SCRIPT ─────────────────────────── -->
+<script>
+/* cursor */
+const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
+document.addEventListener('mousemove',e=>{
+  cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';
+  ring.style.left=e.clientX+'px';ring.style.top=e.clientY+'px';
+});
+document.addEventListener('mousedown',()=>{ring.style.width='20px';ring.style.height='20px'});
+document.addEventListener('mouseup',()=>{ring.style.width='28px';ring.style.height='28px'});
+
+/* navigation */
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-link').forEach(a=>a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelector(`[data-page="${id}"]`).classList.add('active');
+  window.scrollTo(0,0);
+  if(id==='home'){
+    document.querySelectorAll('.sk-bar').forEach(b=>b.style.width='0');
+    setTimeout(animateBars,250);
+  }
+}
+
+document.querySelectorAll('.nav-link').forEach(a=>{
+  a.addEventListener('click',()=>showPage(a.dataset.page));
+});
+
+/* skill bars */
+function animateBars(){
+  document.querySelectorAll('.sk-bar').forEach(b=>{
+    setTimeout(()=>b.style.width=b.dataset.level+'%',200);
+  });
+}
+animateBars();
+
+/* galleries */
+const slides={};
+function initGallery(id){slides[id]=0}
+['monta','nonni','q4p1'].forEach(initGallery);
+
+function updateGallery(id){
+  document.getElementById('gallery-'+id).style.transform=`translateX(-${slides[id]*100}%)`;
+  document.querySelectorAll(`#dots-${id} .dot`).forEach((d,i)=>{
+    d.classList.toggle('active',i===slides[id]);
+  });
+}
+
+function moveGallery(id,dir){
+  const total=document.getElementById('gallery-'+id).children.length;
+  slides[id]=(slides[id]+dir+total)%total;
+  updateGallery(id);
+}
+
+function goSlide(id,n){
+  slides[id]=n;updateGallery(id);
+}
+</script>
 </body>
 </html>
